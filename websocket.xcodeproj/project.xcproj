@@ -38,6 +38,13 @@
       ],
       "build-settings": {
         "CODE_SIGN_STYLE": "Automatic",
+        "HEADER_SEARCH_PATHS": "/opt/homebrew/include",
+        "LIBRARY_SEARCH_PATHS": "/opt/homebrew/lib",
+        "OTHER_LDFLAGS": [
+          "-lcrypto",
+          "-lssl",
+          "-lwebsockets",
+        ],
         "PRODUCT_NAME": "$(TARGET_NAME)",
       },
     },
